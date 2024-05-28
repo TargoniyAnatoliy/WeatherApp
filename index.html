@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather</h1>
+        <div id="control"><input type="text" id="locationInput" placeholder="Enter a city">
+            <button id="search">Search</button>
+        </div>
+        <div class="weather-info">
+            <div>
+                <h2 id="location"></h2>
+                <div class="units-container">
+                    <button id="cels-btn" class="active">°C</button>
+                    <button id="fahr-btn">°F</button>
+                </div>
+            </div>
+            <div class="weather-info__container">
+                <div id="temperature"></div>
+                <div class="desc-wind">
+                    <div id="description"></div>
+                    <div id="wind"></div>
+                </div>
+            </div>
+        </div>
+        <h2>Погода на 5 днів</h2>
+        <div class="fivedays"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

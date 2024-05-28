@@ -1,0 +1,105 @@
+* {    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;    
+    color: rgba(95, 86, 232, 0.7);
+    background-color: #f0f0f0;
+    text-shadow: 0.5px 0.5px 1px black;
+    background: url(./Depositphotos_109768154_S-sky.jpg) center / cover no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 105px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#location {
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 100%;;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+button {
+    background-color: rgba(0, 123, 255, 0.3);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 123, 255, 0.5);
+}
+
+.active {
+    background-color: rgba(0, 123, 255, 0.5);
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.units-container {
+    display: flex;
+    gap: 10px;
+}
+
+#temperature {
+    border-right: 1px solid white;
+}
+
+.desc-wind {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-end;
+}
+
+.fivedays {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
