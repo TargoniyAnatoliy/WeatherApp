@@ -61,7 +61,7 @@ function fetchWeather(location) {
             let weatherIcon = data.weather[0].icon;
             locationEl.textContent = data.name;
             temperatureEl.innerHTML = `<span>${Math.round(data.main.temp)}°</span> <img src= "https://openweathermap.org/img/wn/${weatherIcon}@2x.png" alt="Weather icon">`;
-            descriptionEl.innerHTML = `<span>відч. як ${Math.round(data.main.feels_like)}° </span> <span>${data.weather[0].description}</span>`;
+            descriptionEl.innerHTML = `<span>відч. як ${Math.round(data.main.feels_like)}°</span><br><span>${data.weather[0].description}</span>`;
             windEl.innerHTML = `<p>Швидкість вітру - ${data.wind.speed}м/с</p>`;
         })
         .catch(error => {
